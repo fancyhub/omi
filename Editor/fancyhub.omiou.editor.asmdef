@@ -1,0 +1,16 @@
+{
+    "name": "fancyhub.omiou.editor",
+    "rootNamespace": "",
+    "references": [
+        "GUID:83fe404da9bbc2d44863080913f06ef6"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
