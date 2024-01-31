@@ -8,14 +8,11 @@
 using System;
 
 using UnityEngine;
-using UnityEditor;
 using System.Collections.Generic;
-using System.Reflection;
 
 namespace FH.Omi.Editor
 {
-
-    public class GroupNode
+    public sealed class GroupNode
     {
         public readonly string Name;
 
@@ -139,5 +136,4 @@ namespace FH.Omi.Editor
             return null;
         }
     }
-
 }

@@ -14,18 +14,8 @@ using System.Reflection;
 
 namespace FH.Omi.Editor
 {
-    public  static partial class OmiEditorGUI
+    public static partial class OmiEditorGUI
     {
-         
-
-        private static void _DrawMemberList(List<MyMemberInfo> member_list)
-        {
-            if (member_list == null)
-                return;
-            foreach (var p in member_list)
-                Draw(p);
-        }
-
         public static void Draw(MyMemberInfo info)
         {
             if (info is MyFieldInfo field_info)
@@ -36,6 +26,14 @@ namespace FH.Omi.Editor
             {
                 _DrawMethodInfo(methodInfo);
             }
+        }
+
+        private static void _DrawMemberList(List<MyMemberInfo> member_list)
+        {
+            if (member_list == null)
+                return;
+            foreach (var p in member_list)
+                Draw(p);
         }
 
         private static void _DrawFieldInfo(MyFieldInfo field_info)
