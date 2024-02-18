@@ -56,14 +56,11 @@ namespace FH.Omi.Editor
                 if (_Group != null)
                     return _Group;
 
-
                 List<MyMemberInfo> member_list = MemberList;
                 _Group = new GroupNode(null);
 
                 foreach (var p in member_list)
                 {
-                    Debug.Log($"process {p.Name}");
-
                     string path = null;
                     foreach (var attr in p.MemberInfo.GetCustomAttributes<GroupAttribute>())
                     {
